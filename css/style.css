@@ -17,12 +17,11 @@ body {
 }
 
 a {
-    color: #2dc997;
+    color: $yellow;
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
     color: #2dca98;
     outline: none;
     text-decoration: none;
