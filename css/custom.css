@@ -97,6 +97,16 @@
   border: 2px solid #2dc997;
 }
 
+#plans .box {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  background: #fafafa;
+  height: 300px;
+}
+
 @media screen and (max-width: 991px) {
   #contact iframe {
     width: 100%;
