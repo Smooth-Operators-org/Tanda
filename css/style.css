@@ -330,7 +330,6 @@ h6 {
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 13px;
@@ -644,23 +643,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 
-#plans {
+#planes {
     background: #fff;
     background-size: cover;
     padding: 80px 0 60px 0;
 }
 
-#plans .box {
-    padding: 50px 20px;
-    margin-bottom: 50px;
-    text-align: center;
-    border: 1px solid #e6e6e6;
-    height: 200px;
-    position: relative;
-    background: #fafafa;
-}
-
-#plans .icon {
+#planes .icon {
     position: absolute;
     top: -36px;
     left: calc(50% - 36px);
@@ -677,40 +666,40 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: #2dc997;
 }
 
-#plans .icon a {
+#planes .icon a {
     display: inline-block;
 }
 
-#plans .icon i {
+#planes .icon i {
     color: #fff;
     font-size: 24px;
 }
 
-#plans .box:hover .icon {
+#planes .box:hover .icon {
     background: #fff;
     border: 2px solid #2dc997;
 }
 
-#plans .box:hover .icon i {
+#planes .box:hover .icon i {
     color: #2dc997;
 }
 
-#plans .box:hover .icon a {
+#planes .box:hover .icon a {
     color: #2dc997;
 }
 
-#plans .title {
+#planes .title {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-#plans .title a {
+#planes .title a {
     color: #111;
 }
 
-#plans .description {
+#planes .description {
     font-size: 14px;
     line-height: 24px;
 }
