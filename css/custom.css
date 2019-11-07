@@ -109,7 +109,24 @@
   font-family: 'Playfair Display', serif;
 }
 
-#about p {
+#about p,
+#about li {
+  font-family: 'Raleway', sans-serif;
+}
+
+#promos .section-title {
+  font-family: 'Playfair Display', serif;
+}
+
+#promos .section-description {
+  font-family: 'Raleway', sans-serif;
+}
+
+#planes .section-title {
+  font-family: 'Playfair Display', serif;
+}
+
+#planes .section-description {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -123,8 +140,16 @@
   height: 300px;
 }
 
+#planes .title a {
+  font-family: 'Playfair Display', serif;
+}
+
+#planes .description {
+  font-family: 'Raleway', sans-serif;
+}
+
 #planes .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -148,6 +173,16 @@
   #planes .cta-btn {
     margin-bottom: 50px;
   }
+}
+
+#contact .section-title {
+  font-family: 'Playfair Display', serif;
+}
+
+#contact p,
+#contact h6,
+#contact input {
+  font-family: 'Raleway', sans-serif;
 }
 
 #contact textarea {

@@ -117,14 +117,32 @@
         .title {
             font-family: 'Playfair Display', serif;
         }
-        p {
+        p,
+        li {
             font-family: 'Raleway', sans-serif;
         }
     }
     
     // END OF QUIENES SOMOS
+    // PROMOCIONES
+    #promos {
+        .section-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-description {
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+    
+    // END OF PROMOCIONES
     // PLANS
     #planes {
+        .section-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-description {
+            font-family: 'Raleway', sans-serif;
+        }
         .box {
             padding: 50px 20px;
             margin-bottom: 50px;
@@ -134,8 +152,14 @@
             background: #fafafa;
             height: 300px;
         }
+        .title a {
+            font-family: 'Playfair Display', serif;
+        }
+        .description {
+            font-family: 'Raleway', sans-serif;
+        }
         .cta-btn {
-            font-family: "Poppins", sans-serif;
+            font-family: 'Playfair Display', serif;
             text-transform: uppercase;
             font-weight: 500;
             font-size: 16px;
@@ -162,6 +186,14 @@
     // END OF PLANS
     // CONTACT
     #contact {
+        .section-title {
+            font-family: 'Playfair Display', serif;
+        }
+        p,
+        h6,
+        input {
+            font-family: 'Raleway', sans-serif;
+        }
         textarea {
             resize: none;
         }
