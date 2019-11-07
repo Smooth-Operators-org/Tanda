@@ -4,6 +4,19 @@
 
 #header .nav-menu a {
   font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+#header .nav-menu a:hover {
+  color: #5887a3;
+}
+
+#header .nav-menu i {
+  color: white;
+}
+
+#header .nav-menu i:hover {
+  color: #5887a3;
 }
 
 #home {
@@ -12,6 +25,10 @@
   background: url(/img/slider2.jpg) top center;
   background-size: cover;
   position: relative;
+}
+
+#home h1 {
+  font-size: 35px;
 }
 
 #home .owl-carousel .owl-item {
@@ -68,6 +85,9 @@
     font-size: 28px;
     line-height: 36px;
   }
+  #home .owl-carousel .owl-item {
+    padding-top: 150px;
+  }
 }
 
 #home h2 {
@@ -114,12 +134,38 @@
   font-family: 'Raleway', sans-serif;
 }
 
+#about .owl-nav {
+  display: none;
+}
+
 #promos .section-title {
   font-family: 'Playfair Display', serif;
 }
 
 #promos .section-description {
   font-family: 'Raleway', sans-serif;
+}
+
+#promos .cta-btn {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #124e8a;
+  color: #124e8a;
+}
+
+#promos .cta-btn:hover {
+  background: #124e8a;
+  border: 2px solid #124e8a;
+  color: white;
 }
 
 #planes .section-title {
@@ -160,13 +206,14 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #2dc997;
-  color: #2dc997;
+  border: 2px solid #124e8a;
+  color: #124e8a;
 }
 
 #planes .cta-btn:hover {
-  background: #fff;
-  border: 2px solid #2dc997;
+  background: #124e8a;
+  border: 2px solid #124e8a;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {

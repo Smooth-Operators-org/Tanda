@@ -47,7 +47,6 @@
             <div id="logo" class="pull-left">
                 <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img>
                 </a>-->
-                <!-- Uncomment below if you prefer to use a text logo -->
                 <h1><a href="#hero">Dámda Tanda</a></h1>
             </div>
 
@@ -55,7 +54,6 @@
                 <ul class="nav-menu">
                     <li class="menu-active"><a href="#hero">Inicio</a></li>
                     <li><a href="#about">¿Quienes Somos?</a></li>
-                    <!--<li><a href="#services">Services</a></li>-->
                     <li><a href="#promos">Promociones</a></li>
                     <li><a href="#planes">Planes</a></li>
                     <li><a href="#contact">Contacto</a></li>
@@ -110,7 +108,7 @@
                         <div class="icon-box wow fadeInUp">
                             <div class="icon"><i class="fas fa-glasses"></i></div>
                             <h4 class="title"><a href="">Visión</a></h4>
-                            <p class="description">ser los mejores a nivel nacional y en un futuro no muy lejano poder ofrecer nuestros servicios en el extranjero.</p>
+                            <p class="description">Ser los mejores a nivel nacional y, eventualmente, poder ofrecer nuestros servicios como el mejor sistema de tandas en el extranjero.</p>
                         </div>
 
                         <div class="icon-box wow fadeInUp">
@@ -153,9 +151,14 @@
                     <h3 class="section-title">Promociones</h3>
                     <p class="section-description">Ingresa tu código de promoción aquí:</p>
                 </div>
-                <div class="row counters">
+                <div class="row">
 
-                    <div class="col-lg-3 col-6 text-center">
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <input type="text">
+                        <a class="cta-btn align-middle" href="#">Enviar código</a>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-6 text-center">
                         <span data-toggle="counter-up">232</span>
                         <p>Clients</p>
                     </div>
@@ -173,7 +176,7 @@
                     <div class="col-lg-3 col-6 text-center">
                         <span data-toggle="counter-up">15</span>
                         <p>Hard Workers</p>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -194,29 +197,26 @@
                             <div class="icon"><a href=""><i class="fa fa-gift" aria-hidden="true"></i></a></div>
                             <h4 class="title"><a href="">Prueba</a></h4>
                             <ul class="description text-left">
-                                <li>Tandas de hasta 10 personas</li>
-                                <li>Máximo $1,000 pesos por persona</li>
-                                <li>Limitado a dos grupos de tandas</li>
-                                <li>Tandas de hasta 4 meses.</li>
+                                <li>Acceso por ___ a todas las funciones de un usuario Premium.</li>
+                                <li>Durante ____ tiempo.</li>
+                                <!-- <li>Limitado a dos grupos de tandas</li>
+                                <li>Tandas de hasta 4 meses.</li> -->
                             </ul>
                         </div>
-                        <div class="cta-btn-container text-center">
+                        <!-- <div class="cta-btn-container text-center">
                             <a class="cta-btn align-middle" href="#">Registrarse</a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="box">
                             <div class="icon"><a href=""><i class="fas fa-coins"></i></a></div>
                             <h4 class="title"><a href="">Básico</a></h4>
                             <ul class="description text-left">
-                                <li>Tandas de hasta 10 personas</li>
-                                <li>Máximo $1,000 pesos por persona</li>
-                                <li>Limitado a dos grupos de tandas</li>
+                                <li>Tandas de hasta 10 personas.</li>
+                                <li>Máximo $1,000 pesos por persona.</li>
+                                <li>Limitado a dos grupos de tandas.</li>
                                 <li>Tandas de hasta 4 meses.</li>
                             </ul>
-                        </div>
-                        <div class="cta-btn-container text-center">
-                            <a class="cta-btn align-middle" href="#">Registrarse</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
@@ -224,15 +224,20 @@
                             <div class="icon"><a href=""><i class="fas fa-dollar-sign"></i></a></div>
                             <h4 class="title"><a href="">Premium</a></h4>
                             <ul class="description text-left">
-                                <li>Tandas de hasta 10 personas</li>
-                                <li>Máximo $1,000 pesos por persona</li>
-                                <li>Limitado a dos grupos de tandas</li>
-                                <li>Tandas de hasta 4 meses.</li>
+                                <li>Tandas sin límite de personas.</li>
+                                <li>No hay máxima cantidad para los abonos.</li>
+                                <li>Puedes tener los grupos de tandas que quieras.</li>
+                                <li>Tú eliges el tiempo de duración.</li>
                             </ul>
                         </div>
-                        <div class="cta-btn-container text-center">
+                        <!-- <div class="cta-btn-container text-center">
                             <a class="cta-btn align-middle" href="#">Registrarse</a>
-                        </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="cta-btn-container col-md-12 ">
+                        <a class="cta-btn align-middle" href="#">Registrarse</a>
                     </div>
                 </div>
             </div>
@@ -334,19 +339,19 @@
 
 
                         <div class="form">
-                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="sendmessage">Tu mensaje ha sido enviado!</div>
                             <div id="errormessage"></div>
                             <form action="" method="post" role="form" class="contactForm">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:4" data-msg="Ingresa al menos 4 caracteres" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Ingresa un correo valido" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono:" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono:" data-rule="minlen:4" data-msg="Ingresa un teléfono valido" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
@@ -462,8 +467,9 @@
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
-            autoPlay: true,
-            center: true,
+            autoplay: true,
+            autoPlaySpeed: 5000,
+            autoPlayTimeout: 5000,
             nav: false,
             responsiveClass: true,
             responsive: {
