@@ -9,22 +9,17 @@
 #home {
   width: 100%;
   height: 100vh;
+  background: url(/img/slider2.jpg) top center;
+  background-size: cover;
   position: relative;
 }
 
-#home .owl-carousel .owl-item img {
-  height: 680px;
-  padding-top: 100px;
+#home .owl-carousel .owl-item {
+  padding-top: 250px;
 }
 
 #home .owl-nav {
   display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  #home {
-    background-attachment: fixed;
-  }
 }
 
 #home:before {
@@ -147,6 +142,12 @@
 #planes .cta-btn:hover {
   background: #fff;
   border: 2px solid #2dc997;
+}
+
+@media screen and (max-width: 600px) {
+  #planes .cta-btn {
+    margin-bottom: 50px;
+  }
 }
 
 #contact textarea {
