@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Dámda Tanda</title>
+    <title>Dámda</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,7 +48,7 @@
             <div id="logo" class="pull-left">
                 <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img>
                 </a>-->
-                <h1><a href="#hero">Dámda Tanda</a></h1>
+                <h1><a href="#hero">Dámda</a></h1>
             </div>
 
             <nav id="nav-menu-container">
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="owl-carousel owl-theme col-lg-12">
                     <div class="item">
-                        <h1 class="text-center">¡Dámda Tanda! <br> Tandandeando tu futuro. </h1>
+                        <h1 class="text-center">¡Dámda! <br> Tandandeando tu futuro. </h1>
                     </div>
                     <div class="item">
                         <h1 class="text-center">La atención a nuestros clientes, la pasión con la que los perseguimos en días quincena, la responsabilidad con la que protegemos tu número elegido son nuestros valores fundamentales.</h1>
@@ -347,17 +347,20 @@
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:4" data-msg="Ingresa al menos 4 caracteres" />
                                     <div class="validation"></div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Ingresa un correo valido" />
-                                    <div class="validation"></div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Ingresa un correo valido" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono:" data-rule="minlen:4" data-msg="Ingresa un teléfono valido" />
+                                        <div class="validation"></div>
+                                    </div>
                                 </div>
+
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono:" data-rule="minlen:4" data-msg="Ingresa un teléfono valido" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <h6>¿Dondé nos encontraste?</h6>
                                     <select type="text" class="form-control" name="where" id="where">
+                                    <option value="" selected>¿Dondé nos encontraste?</option>
                                     <option value="facebook" >Facebook</option>
                                     <option value="instagram">Instagram</option>
                                     <option value="twitter">Twitter</option>
@@ -370,8 +373,8 @@
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <h6>Estado:</h6>
                                     <select type="text" class="form-control" name="estado" id="estado">
+                                            <option value="" selected>Estado:</option>
                                             <option value="CDMX">Ciudad de México</option>
                                             <option value="AGS">Aguascalientes</option>
                                             <option value="BCN">Baja California</option>
@@ -428,7 +431,6 @@
     <footer id="footer">
         <div class="footer-top">
             <div class="container">
-
             </div>
         </div>
         <div class="container">
@@ -451,44 +453,40 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/superfish/hoverIntent.js"></script>
     <script src="lib/superfish/superfish.min.js"></script>
-
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="jquery.min.js"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
-
-    <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>
 
 
 
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoPlaySpeed: 5000,
-            autoPlayTimeout: 5000,
-            nav: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                600: {
-                    items: 1,
-                    nav: false
-                },
-                1000: {
-                    items: 1,
-                    nav: false,
-                    loop: true
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoPlaySpeed: 500,
+                //autoPlayTimeout: 5000,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: true
+                    }
                 }
-            }
-        })
+            })
+        });
     </script>
 
 </body>

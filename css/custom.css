@@ -5,7 +5,7 @@
 
 #header .nav-menu a {
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #header .nav-menu a:hover {
@@ -23,7 +23,7 @@
 #home {
   width: 100%;
   height: 100vh;
-  background: url(/img/slider2.jpg) top center;
+  background: url(/img/slider2.jpg) center;
   background-size: cover;
   position: relative;
 }
@@ -198,6 +198,21 @@
   height: 300px;
 }
 
+#planes .box:hover {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  background: #124e8a;
+  height: 300px;
+}
+
+#planes .box:hover .title a,
+#planes .box:hover li {
+  color: white;
+}
+
 #planes .title a {
   font-family: 'Cinzel', serif;
   font-weight: 400;
@@ -243,8 +258,10 @@
 
 #contact p,
 #contact h6,
-#contact input {
+#contact input,
+#contact select {
   font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 #contact textarea {
