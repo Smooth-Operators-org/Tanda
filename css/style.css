@@ -89,7 +89,6 @@ h6 {
 
 .back-to-top:hover {
     background: #124e8a;
-    ;
     color: #fff;
 }
 
@@ -118,10 +117,10 @@ h6 {
     margin: 0;
     padding: 6px 0;
     line-height: 1;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 700;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 #header #logo h1 a,

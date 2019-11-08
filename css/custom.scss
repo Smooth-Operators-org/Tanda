@@ -7,11 +7,13 @@
     $pink_yarrow: #d23376;
     $kale: #5c704d;
     // font-family: 'Raleway', sans-serif;
-    // font-family: 'Playfair Display', serif;
+    // font-family: 'Cinzel', serif;
+    // font-family: 'Cinzel', serif;
     // header
     #header {
         h1 a {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         .nav-menu {
             a {
@@ -47,6 +49,9 @@
         .owl-nav {
             display: none;
         }
+        .owl-dot.active span {
+            background: $lapis_blue !important;
+        }
     }
     
     @media screen and (min-width: 1024px) {
@@ -80,11 +85,11 @@
     
     #home h1 {
         margin: 30px 0 10px 0;
-        font-size: 48px;
-        font-weight: 700;
+        font-size: 40px;
         line-height: 56px;
         // text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Cinzel', serif;
+        // font-weight: 400;
         color: #fff;
     }
     
@@ -137,7 +142,8 @@
     // QUIENES SOMOS
     #about {
         .title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         p,
         li {
@@ -146,19 +152,24 @@
         .owl-nav {
             display: none;
         }
+        .owl-dot.active span {
+            background: $lapis_blue !important;
+        }
     }
     
     // END OF QUIENES SOMOS
     // PROMOCIONES
     #promos {
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         .section-description {
             font-family: 'Raleway', sans-serif;
         }
         .cta-btn {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
             text-transform: uppercase;
             font-weight: 500;
             font-size: 16px;
@@ -182,7 +193,8 @@
     // PLANS
     #planes {
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         .section-description {
             font-family: 'Raleway', sans-serif;
@@ -197,13 +209,15 @@
             height: 300px;
         }
         .title a {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         .description {
             font-family: 'Raleway', sans-serif;
         }
         .cta-btn {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
             text-transform: uppercase;
             font-weight: 500;
             font-size: 16px;
@@ -232,7 +246,8 @@
     // CONTACT
     #contact {
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         p,
         h6,
