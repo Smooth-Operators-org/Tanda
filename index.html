@@ -132,7 +132,7 @@
                                 <img src="/img/tanda3.jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img src="/img/tanda4.jpeg" alt="">
+                                <img src="/img/tanda10.jpeg" alt="">
                             </div>
                             <div class="item">
                                 <img src="/img/tanda6.jpeg" alt="">
@@ -315,61 +315,58 @@
             <div class="container wow fadeInUp">
                 <div class="section-header">
                     <h3 class="section-title">Contacto</h3>
-                    <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
                 </div>
             </div>
+            <div class="row mt-5">
+                <!-- Uncomment below if you wan to use dynamic maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8759371020137!2d-86.84963468506518!3d21.157334985928852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID%20Campus%20Canc%C3%BAn!5e0!3m2!1ses!2smx!4v1572747227076!5m2!1ses!2smx"
+                    width="50%" height="580" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-            <div class="container wow fadeInUp mt-5">
-                <div class="row">
-                    <!-- Uncomment below if you wan to use dynamic maps -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8759371020137!2d-86.84963468506518!3d21.157334985928852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID%20Campus%20Canc%C3%BAn!5e0!3m2!1ses!2smx!4v1572747227076!5m2!1ses!2smx"
-                        width="50%" height="580" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="col-lg-5 col-md-12">
 
-                    <div class="col-lg-6 col-md-12">
-
-                        <div class="info">
-                            <div>
-                                <i class="fa fa-map-marker"></i>
-                                <p>Avenida Rodrigo Gómez Manzana 9,<br>lote 1-15, 38, 77507 Cancún, Q.R.</p>
-                            </div>
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p>Avenida Rodrigo Gómez Manzana 9,<br>lote 1-15, 38, 77507 Cancún, Q.R.</p>
                         </div>
+                    </div>
 
 
-                        <div class="form">
-                            <div id="sendmessage">Tu mensaje ha sido enviado!</div>
-                            <div id="errormessage"></div>
-                            <form action="" method="post" role="form" class="contactForm">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:4" data-msg="Ingresa al menos 4 caracteres" />
+                    <div class="form">
+                        <div id="sendmessage">Tu mensaje ha sido enviado!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:4" data-msg="Ingresa al menos 4 caracteres" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Ingresa un correo valido" />
                                     <div class="validation"></div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Ingresa un correo valido" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono:" data-rule="minlen:4" data-msg="Ingresa un teléfono valido" />
-                                        <div class="validation"></div>
-                                    </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono:" data-rule="minlen:4" data-msg="Ingresa un teléfono valido" />
+                                    <div class="validation"></div>
                                 </div>
+                            </div>
 
-                                <div class="form-group">
-                                    <select type="text" class="form-control" name="where" id="where">
+                            <div class="form-group">
+                                <select type="text" class="form-control" name="where" id="where">
                                     <option value="" selected>¿Dondé nos encontraste?</option>
                                     <option value="facebook" >Facebook</option>
                                     <option value="instagram">Instagram</option>
                                     <option value="twitter">Twitter</option>
                                     <option value="otro">Otro</option>
                                     </select>
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ciudad:" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <select type="text" class="form-control" name="estado" id="estado">
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ciudad:" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <select type="text" class="form-control" name="estado" id="estado">
                                             <option value="" selected>Estado:</option>
                                             <option value="CDMX">Ciudad de México</option>
                                             <option value="AGS">Aguascalientes</option>
@@ -404,19 +401,16 @@
                                             <option value="YUC">Yucat&aacute;n</option>
                                             <option value="ZAC">Zacatecas</option>
                                             </select>
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" placeholder="Comentario:"></textarea>
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="text-center"><button type="submit">Enviar</button></div>
-                            </form>
-                        </div>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" placeholder="Comentario:"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="text-center"><button type="submit">Enviar</button></div>
+                        </form>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <!-- #contact -->
@@ -425,13 +419,9 @@
 
     <!--========================== Footer ============================-->
     <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-            </div>
-        </div>
         <div class="container">
             <div class="copyright">
-                &copy; <strong>Dámda Tanda</strong>
+                &copy; <strong>Dámda</strong>
             </div>
         </div>
     </footer>
@@ -461,7 +451,7 @@
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
                 loop: true,
-                autoplay: true,
+                autoPlay: true,
                 autoPlaySpeed: 500,
                 //autoPlayTimeout: 5000,
                 nav: false,
