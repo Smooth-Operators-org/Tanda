@@ -17,7 +17,8 @@ body {
 }
 
 a {
-    color: #2dc997;
+    color: #124e8a;
+    ;
 }
 
 a:hover,
@@ -87,7 +88,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #2dc997;
+    background: #124e8a;
     color: #fff;
 }
 
@@ -116,10 +117,10 @@ h6 {
     margin: 0;
     padding: 6px 0;
     line-height: 1;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 700;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 #header #logo h1 a,
@@ -142,7 +143,7 @@ h6 {
 }
 
 #header.header-fixed {
-    background: rgba(52, 59, 64, 0.9);
+    background: #124e8a;
     padding: 20px 0;
     height: 72px;
     transition: all 0.5s;
@@ -238,8 +239,10 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+    background: #124e8a;
+    ;
+    border: 2px solid #124e8a;
+    ;
 }
 
 
@@ -289,26 +292,6 @@ h6 {
 }
 
 
-/* Nav Menu Arrows */
-
-.sf-arrows .sf-with-ul {
-    padding-right: 30px;
-}
-
-.sf-arrows .sf-with-ul:after {
-    content: "\f107";
-    position: absolute;
-    right: 15px;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.sf-arrows ul .sf-with-ul:after {
-    content: "\f105";
-}
-
-
 /* Nav Meu Container */
 
 #nav-menu-container {
@@ -347,7 +330,7 @@ h6 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #2dc997;
+    background-color: #5887a3;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -386,7 +369,7 @@ h6 {
 }
 
 .nav-menu ul li a:hover {
-    background: #2dc997;
+    background: #5887a3;
     color: #fff;
 }
 
@@ -431,7 +414,7 @@ h6 {
     padding-top: 18px;
     bottom: 0;
     z-index: 998;
-    background: rgba(52, 59, 64, 0.9);
+    background: #124e8a;
     left: -260px;
     width: 260px;
     overflow-y: auto;
@@ -477,12 +460,8 @@ h6 {
     color: #fff;
 }
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #2dc997;
-}
-
 #mobile-nav ul .menu-item-active {
-    color: #2dc997;
+    color: #5887a3;
 }
 
 #mobile-body-overly {
@@ -492,7 +471,10 @@ h6 {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgba(52, 59, 64, 0.9);
+    display: none;
+}
+
+#mobile-nav i {
     display: none;
 }
 
@@ -546,7 +528,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
     min-height: 300px;
-    background: url(../img/about-img.jpg) center top no-repeat;
     margin-bottom: 10px;
 }
 
@@ -591,11 +572,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     flex-direction: column;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid #2dc997;
+    border: 2px solid #124e8a;
 }
 
 #about .about-container .icon-box .icon i {
-    color: #2dc997;
+    color: #124e8a;
     font-size: 24px;
 }
 
@@ -629,7 +610,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #promos .counters span {
     font-size: 48px;
     display: block;
-    color: #2dc997;
+    color: #124e8a;
+    ;
 }
 
 #promos .counters p {
@@ -663,7 +645,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     width: 72px;
     height: 72px;
-    background: #2dc997;
+    background: #124e8a;
+    ;
 }
 
 #planes .icon a {
@@ -677,15 +660,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #planes .box:hover .icon {
     background: #fff;
-    border: 2px solid #2dc997;
+    border: 2px solid #124e8a;
+    ;
 }
 
 #planes .box:hover .icon i {
-    color: #2dc997;
+    color: #124e8a;
+    ;
 }
 
 #planes .box:hover .icon a {
-    color: #2dc997;
+    color: #124e8a;
+    ;
 }
 
 #planes .title {
@@ -708,11 +694,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 
-#call-to-action {
+
+/* #call-to-action {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
     background-size: cover;
     padding: 80px 0;
-}
+} */
 
 #call-to-action .cta-title {
     color: #fff;
@@ -748,8 +735,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+    background: #124e8a;
+    ;
+    border: 2px solid #124e8a;
+    ;
 }
 
 
@@ -789,7 +778,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
-    background: #2dc997;
+    background: #124e8a;
+    ;
     color: #fff;
 }
 
@@ -815,7 +805,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item .details {
     height: 50px;
-    background: #2dc997;
+    background: #124e8a;
+    ;
     position: absolute;
     width: 100%;
     height: 50px;
@@ -891,7 +882,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-    color: #2dc997;
+    color: #124e8a;
+    ;
 }
 
 #team .member .social i {
@@ -905,7 +897,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact {
     background: #f7f7f7;
-    padding: 80px 0 40px 0;
+    padding: 80px 0 0 0;
 }
 
 #contact #google-map {
@@ -919,7 +911,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
     font-size: 32px;
-    color: #2dc997;
+    color: #124e8a;
+    ;
     float: left;
 }
 
@@ -953,13 +946,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links a:hover {
-    background: #2dc997;
+    background: #124e8a;
+    ;
     color: #fff;
 }
 
 #contact .form #sendmessage {
-    color: #2dc997;
-    border: 1px solid #2dc997;
+    color: #124e8a;
+    ;
+    border: 1px solid #124e8a;
+    ;
     display: none;
     text-align: center;
     padding: 15px;
@@ -999,7 +995,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-    background: #2dc997;
+    background: #124e8a;
+    border-radius: 28px;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -1007,7 +1004,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-    background: #51d8ad;
+    background: #5887a3;
 }
 
 
@@ -1016,7 +1013,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #343b40;
+    background: #124e8a;
     padding: 30px 0;
     color: #fff;
     font-size: 14px;

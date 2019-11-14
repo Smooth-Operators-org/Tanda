@@ -1,30 +1,47 @@
 #header h1 a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
 }
 
 #header .nav-menu a {
   font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+#header .nav-menu a:hover {
+  color: #5887a3;
+}
+
+#header .nav-menu i {
+  color: white;
+}
+
+#header .nav-menu i:hover {
+  color: #5887a3;
 }
 
 #home {
   width: 100%;
   height: 100vh;
+  background: url(/img/slider2.jpg) center;
+  background-size: cover;
   position: relative;
 }
 
-#home .owl-carousel .owl-item img {
-  height: 680px;
-  padding-top: 100px;
+#home h1 {
+  font-size: 35px;
+}
+
+#home .owl-carousel .owl-item {
+  padding-top: 250px;
 }
 
 #home .owl-nav {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  #home {
-    background-attachment: fixed;
-  }
+#home .owl-dot.active span {
+  background: #124e8a !important;
 }
 
 #home:before {
@@ -61,10 +78,9 @@
 
 #home h1 {
   margin: 30px 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 40px;
   line-height: 56px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   color: #fff;
 }
 
@@ -72,6 +88,9 @@
   #home h1 {
     font-size: 28px;
     line-height: 36px;
+  }
+  #home .owl-carousel .owl-item {
+    padding-top: 150px;
   }
 }
 
@@ -111,10 +130,61 @@
 }
 
 #about .title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
 }
 
-#about p {
+#about p,
+#about li {
+  font-family: 'Raleway', sans-serif;
+}
+
+#about .owl-nav {
+  display: none;
+}
+
+#about .owl-dot.active span {
+  background: #124e8a !important;
+}
+
+#promos .section-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+
+#promos .section-description {
+  font-family: 'Raleway', sans-serif;
+}
+
+#promos .cta-btn {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #124e8a;
+  color: #124e8a;
+}
+
+#promos .cta-btn:hover {
+  background: #124e8a;
+  border: 2px solid #124e8a;
+  color: white;
+}
+
+#planes .section-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+
+#planes .section-description {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -128,8 +198,33 @@
   height: 300px;
 }
 
+#planes .box:hover {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  background: #124e8a;
+  height: 300px;
+}
+
+#planes .box:hover .title a,
+#planes .box:hover li {
+  color: white;
+}
+
+#planes .title a {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+
+#planes .description {
+  font-family: 'Raleway', sans-serif;
+}
+
 #planes .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -140,13 +235,33 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #2dc997;
-  color: #2dc997;
+  border: 2px solid #124e8a;
+  color: #124e8a;
 }
 
 #planes .cta-btn:hover {
-  background: #fff;
-  border: 2px solid #2dc997;
+  background: #124e8a;
+  border: 2px solid #124e8a;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  #planes .cta-btn {
+    margin-bottom: 50px;
+  }
+}
+
+#contact .section-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+
+#contact p,
+#contact h6,
+#contact input,
+#contact select {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 #contact textarea {

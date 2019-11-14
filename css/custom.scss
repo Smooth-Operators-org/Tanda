@@ -1,17 +1,33 @@
-    $yellow: #fdc400;
-    $verde_fuerte: #3a6128;
-    $verde: #88c14f;
-    $verde_claro: #86c249;
+    $niagara: #5887a3;
+    $primrose_yellow: #f5d161;
+    $lapis_blue: #124e8a;
+    $flame: #ed5637;
+    $pale_dogwood: #f0cfc6;
+    $greenery: #89b151;
+    $pink_yarrow: #d23376;
+    $kale: #5c704d;
     // font-family: 'Raleway', sans-serif;
-    // font-family: 'Playfair Display', serif;
+    // font-family: 'Cinzel', serif;
+    // font-family: 'Cinzel', serif;
     // header
     #header {
         h1 a {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
         .nav-menu {
             a {
                 font-family: 'Raleway', sans-serif;
+                font-size: 12px;
+            }
+            a:hover {
+                color: $niagara;
+            }
+            i {
+                color: white;
+            }
+            i:hover {
+                color: $niagara;
             }
         }
     }
@@ -21,20 +37,27 @@
     #home {
         width: 100%;
         height: 100vh;
+        background: url(/img/slider2.jpg) center;
+        background-size: cover;
         position: relative;
-        .owl-carousel .owl-item img {
-            height: 680px;
-            padding-top: 100px;
+        h1 {
+            font-size: 35px;
+        }
+        .owl-carousel .owl-item {
+            padding-top: 250px;
         }
         .owl-nav {
             display: none;
         }
+        .owl-dot.active span {
+            background: $lapis_blue !important;
+        }
     }
     
     @media screen and (min-width: 1024px) {
-        #home {
-            background-attachment: fixed;
-        }
+        // #home {
+        //     background-attachment: fixed;
+        // }
     }
     
     #home:before {
@@ -62,18 +85,23 @@
     
     #home h1 {
         margin: 30px 0 10px 0;
-        font-size: 48px;
-        font-weight: 700;
+        font-size: 40px;
         line-height: 56px;
         // text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Cinzel', serif;
+        // font-weight: 400;
         color: #fff;
     }
     
     @media screen and (max-width: 768px) {
-        #home h1 {
-            font-size: 28px;
-            line-height: 36px;
+        #home {
+            h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            .owl-carousel .owl-item {
+                padding-top: 150px;
+            }
         }
     }
     
@@ -114,27 +142,34 @@
     // QUIENES SOMOS
     #about {
         .title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
         }
-        p {
+        p,
+        li {
             font-family: 'Raleway', sans-serif;
+        }
+        .owl-nav {
+            display: none;
+        }
+        .owl-dot.active span {
+            background: $lapis_blue !important;
         }
     }
     
     // END OF QUIENES SOMOS
-    // PLANS
-    #planes {
-        .box {
-            padding: 50px 20px;
-            margin-bottom: 50px;
-            text-align: center;
-            border: 1px solid #e6e6e6;
-            position: relative;
-            background: #fafafa;
-            height: 300px;
+    // PROMOCIONES
+    #promos {
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+        }
+        .section-description {
+            font-family: 'Raleway', sans-serif;
         }
         .cta-btn {
-            font-family: "Poppins", sans-serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
             text-transform: uppercase;
             font-weight: 500;
             font-size: 16px;
@@ -144,18 +179,96 @@
             border-radius: 50px;
             transition: 0.5s;
             margin: 10px;
-            border: 2px solid #2dc997;
-            color: #2dc997;
+            border: 2px solid $lapis_blue;
+            color: $lapis_blue;
         }
         .cta-btn:hover {
-            background: #fff;
-            border: 2px solid #2dc997;
+            background: $lapis_blue;
+            border: 2px solid $lapis_blue;
+            color: white;
+        }
+    }
+    
+    // END OF PROMOCIONES
+    // PLANS
+    #planes {
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+        }
+        .section-description {
+            font-family: 'Raleway', sans-serif;
+        }
+        .box {
+            padding: 50px 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            border: 1px solid #e6e6e6;
+            position: relative;
+            background: #fafafa;
+            height: 300px;
+        }
+        .box:hover {
+            padding: 50px 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            border: 1px solid #e6e6e6;
+            position: relative;
+            background: $lapis_blue;
+            height: 300px;
+            .title a,
+            li {
+                color: white;
+            }
+        }
+        .title a {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+        }
+        .description {
+            font-family: 'Raleway', sans-serif;
+        }
+        .cta-btn {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 10px;
+            border: 2px solid $lapis_blue;
+            color: $lapis_blue;
+        }
+        .cta-btn:hover {
+            background: $lapis_blue;
+            border: 2px solid $lapis_blue;
+            color: white;
+        }
+        @media screen and (max-width: 600px) {
+            .cta-btn {
+                margin-bottom: 50px;
+            }
         }
     }
     
     // END OF PLANS
     // CONTACT
     #contact {
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+        }
+        p,
+        h6,
+        input,
+        select {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+        }
         textarea {
             resize: none;
         }
