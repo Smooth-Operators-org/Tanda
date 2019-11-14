@@ -132,7 +132,7 @@
                                 <img src="/img/tanda3.jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img src="/img/tanda10.jpeg" alt="">
+                                <img src="/img/tanda10.png" alt="">
                             </div>
                             <div class="item">
                                 <img src="/img/tanda6.jpeg" alt="">
@@ -250,10 +250,9 @@
             <div class="container wow fadeInUp">
                 <div class="section-header">
                     <h3 class="section-title">Equipo</h3>
-                    <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="member">
                             <div class="pic"><img src="img/team-1.jpg" alt=""></div>
                             <h4>Karen Alvarez</h4>
@@ -266,7 +265,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="member">
                             <div class="pic"><img src="img/team-2.jpg" alt=""></div>
                             <h4>Maximiliano Leyva</h4>
@@ -279,7 +278,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="member">
                             <div class="pic"><img src="img/team-3.jpg" alt=""></div>
                             <h4>Luis Torres</h4>
@@ -292,10 +291,34 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="member">
                             <div class="pic"><img src="img/team-4.jpg" alt=""></div>
                             <h4>Daniel Rojas</h4>
+                            <span>Desarrollo Software</span>
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+                            <h4>Luis Vasquéz</h4>
+                            <span>Desarrollo Software</span>
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+                            <h4>Mario Morales</h4>
                             <span>Desarrollo Software</span>
                             <div class="social">
                                 <a href=""><i class="fab fa-twitter"></i></a>
@@ -335,7 +358,8 @@
                     <div class="form">
                         <div id="sendmessage">Tu mensaje ha sido enviado!</div>
                         <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm">
+                        <!-- <form action="" method="post" role="form" class="contactForm"> -->
+                        <form class="contactForm" id="form" method="post" name="form" action="v3.php">
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:4" data-msg="Ingresa al menos 4 caracteres" />
                                 <div class="validation"></div>
@@ -451,9 +475,8 @@
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
                 loop: true,
-                autoPlay: true,
+                autoplay: true,
                 autoPlaySpeed: 500,
-                //autoPlayTimeout: 5000,
                 nav: false,
                 responsiveClass: true,
                 responsive: {
