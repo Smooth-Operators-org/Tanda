@@ -17,13 +17,21 @@
     function insertarRegistro(){
         global $db;
         // global $mysqli;
+        extract($_POST);
+        $UserName=json_decode($UserName);
+        $UserLastname=json_decode($UserLastname);
+        $UserPassword=json_decode($UserPassword);
+        $UserEmail=json_decode($UserEmail);
+        $UserPhone=json_decode($UserPhone);
+        $PlanId=json_decode($PlanId);
+
         $UserCreated= strftime("%y-%m-%d %H:%M:%S");
-        $UserSerial = Math.floor((Math.random() * 999999) + 1);
+        // $UserSerial = Math.floor((Math.random() * 999999) + 1);
+        $UserSerial = rand(111111, 999999);
         $respuesta = [];
         $UserName = $_POST['UserName'];
         $UserLastname = $_POST['UserLastname'];
         $UserPassword = $_POST['UserPassword'];
-        $UserSerial = $_POST['UserSerial'];
         $UserEmail = $_POST['UserEmail'];
         $UserPhone = $_POST['UserPhone'];
         $PlanId = $_POST['PlanId'];
