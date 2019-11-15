@@ -28,16 +28,6 @@
         $UserPhone = $_POST['UserPhone'];
         $PlanId = $_POST['PlanId'];
 
-
-        // global $db;
-        // $fecha= strftime("%y-%m-%d %H:%M:%S");
-
-        // $respuesta = [];
-        // $nombre = $_POST['nombre'];
-        // $id_grados = $_POST['id_grados'];
-        // $tiene_canon = $_POST['tiene_canon'];
-        // $status = $_POST['status'];
-
         if (empty($UserName) && empty($UserLastname) && empty($UserPassword) && empty($UserSerial) && empty($UserEmail) && empty($UserPhone) && empty($PlanId)) {
              $respuesta["status"] = 0;
 

@@ -13,14 +13,19 @@ $(document).ready(function () {
 
     $("#btnRegistrar").click(function () {
 
-        $("#myForm").find("input").map(function (i, e) {
-            obj[$(this).prop("name")] = $(this).val();
-        });
-        $("#myForm").find("select").map(function (i, e) {
-            obj[$(this).prop("name")] = $(this).val();
-        });
+        obj["UserName"] = $('#UserName').val();
+        obj["UserLastname"] = $('#UserLastname').val();
+        obj["UserPassword"] = $('#UserPassword').val();
+        obj["UserEmail"] = $('#UserEmail').val();
+        obj["UserPhone"] = $('#UserPhone').val();
+        obj["PlanId"] = $('#PlanId').val();
 
-        console.log(i,e);
+        // obj.push("UserName", UserName);
+        // obj.push("UserLastname", UserLastname);
+        // obj.push("UserPassword", UserPassword);
+        // obj.push("UserEmail", UserEmail);
+        // obj.push("UserPhone", UserPhone);
+        // obj.push("PlanId", PlanId);
 
         switch (obj.accion) {
             case "insertarRegistro":
