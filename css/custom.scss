@@ -167,6 +167,10 @@ $kale: #5c704d;
   .section-description {
     font-family: "Raleway", sans-serif;
   }
+  input {
+    height: 46px;
+    border-radius: 30px;
+  }
   .cta-btn {
     font-family: "Cinzel", serif;
     font-weight: 400;
@@ -224,6 +228,7 @@ $kale: #5c704d;
   .title a {
     font-family: "Cinzel", serif;
     font-weight: 400;
+    color: white;
   }
   .title:hover {
     color: white;

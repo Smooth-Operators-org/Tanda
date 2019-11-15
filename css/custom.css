@@ -156,6 +156,11 @@
   font-family: "Raleway", sans-serif;
 }
 
+#promos input {
+  height: 46px;
+  border-radius: 30px;
+}
+
 #promos .cta-btn {
   font-family: "Cinzel", serif;
   font-weight: 400;
@@ -216,6 +221,7 @@
 #planes .title a {
   font-family: "Cinzel", serif;
   font-weight: 400;
+  color: white;
 }
 
 #planes .title:hover {

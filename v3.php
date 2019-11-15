@@ -1,4 +1,3 @@
-
 <?php
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
  $mail = new PHPMailer;
