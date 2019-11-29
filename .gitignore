@@ -36,3 +36,5 @@ node_modules
 owlcarousel
 lib
 ---contactform
+node_modules
+/node_modules

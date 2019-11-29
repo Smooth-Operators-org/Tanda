@@ -1,0 +1,35 @@
+{
+  "name": "tanda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mainRegistro.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery-migrate": "^3.1.0",
+    "jquery.counterup": "^2.1.0",
+    "jquery.easing": "^1.4.1",
+    "owl.carousel": "^2.3.4",
+    "superfish": "^1.7.10",
+    "waypoints": "^4.0.1",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smooth-Operators-org/Tanda.git"
+  },
+  "author": "Mario Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smooth-Operators-org/Tanda/issues"
+  },
+  "homepage": "https://github.com/Smooth-Operators-org/Tanda#readme"
+}
