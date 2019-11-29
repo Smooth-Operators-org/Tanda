@@ -284,4 +284,13 @@
     padding-bottom: 20px;
   }
 }
+
+#myModal-Enviar input {
+  border-radius: 0;
+}
+
+#myModal-Enviar #btnValidar,
+#myModal-Enviar #btnValidar-pass {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=custom.css.map */

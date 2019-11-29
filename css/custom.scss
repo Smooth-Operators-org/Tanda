@@ -289,3 +289,13 @@ $kale: #5c704d;
 }
 
 // END OF CONTACT
+
+#myModal-Enviar {
+  input {
+    border-radius: 0;
+  }
+  #btnValidar,
+  #btnValidar-pass {
+    margin-bottom: 30px;
+  }
+}

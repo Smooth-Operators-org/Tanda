@@ -155,31 +155,64 @@
 
                     <div class="col-lg-12 col-md-12 text-center">
                         <input type="text">
-                        <a class="cta-btn align-middle" href="#">Enviar código</a>
+                        <a class="cta-btn align-middle" id="myBtn-Enviar">Enviar código</a>
                     </div>
-
-                    <!-- <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">232</span>
-                        <p>Clients</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">521</span>
-                        <p>Projects</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">1,463</span>
-                        <p>Hours Of Support</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">15</span>
-                        <p>Hard Workers</p>
-                    </div> -->
-
+                     <!-- Modal -->
+                     <div class="modal fade" id="myModal-Enviar">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <form id="myForm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                        <h1>Ingresa tu correo</h1>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    
+                                </div>
+                                <div class="modal-body" style="padding:40px 50px;">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo electrónico:">
+                                        </div>
+                                        <button type="button" id="btnValidar" class="btn btn-success btn-block">Validar</button>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña:">
+                                        </div>
+                                        <button type="button" id="btnValidar-pass" class="btn btn-success btn-block">Validar Cupón</button>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="UserName" placeholder="Nombre:">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido(s):">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserEmail" placeholder="Correo Electrónico:">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserPassword" placeholder="Contraseña:">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserPhone" placeholder="Teléfono:">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="PlanId" class="custom-select">
+                                                <option selected="">Selecciona un Plan</option>
+                                                <option value="0">Prueba</option>
+                                                <option value="1">Básico</option>
+                                                <option value="2">Premium</option>
+                                            </select>
+                                        </div>
+                
+                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                        Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div> 
+                    <!-- end of modal -->
                 </div>
-
             </div>
         </section>
         <!-- #promos -->
@@ -199,13 +232,8 @@
                             <ul class="description text-left">
                                 <li>Acceso gratuito a todas las funciones de un usuario Premium.</li>
                                 <li>Durante 15 días.</li>
-                                <!-- <li>Limitado a dos grupos de tandas</li>
-                                <li>Tandas de hasta 4 meses.</li> -->
                             </ul>
                         </div>
-                        <!-- <div class="cta-btn-container text-center">
-                            <a class="cta-btn align-middle" href="#">Registrarse</a>
-                        </div> -->
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="box">
@@ -256,19 +284,19 @@
                 
                                 <div class="modal-body" style="padding:40px 50px;">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre/s">
+                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre(s):">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido/s">
+                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido(s):">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
+                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña:">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electronico">
+                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electrónico:">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserPhone" placeholder="Telefono">
+                                            <input type="text" class="form-control" id="UserPhone" placeholder="Teléfono:">
                                         </div>
                                         <div class="form-group">
                                             <select id="PlanId" class="custom-select">
@@ -288,7 +316,8 @@
                             </div>
                         </form>
                         </div>
-                    </div>
+                    </div> 
+                    <!-- end of modal -->
                 </div>
             </div>
         </section>
@@ -525,7 +554,14 @@
             $("#myModal").modal();
           });
         });
-        </script>
+    </script>
+    <script>
+    $(document).ready(function(){
+          $("#myBtn-Enviar").click(function(){
+            $("#myModal-Enviar").modal();
+          });
+        });
+    </script>
 
     <script>
         $(document).ready(function() {
