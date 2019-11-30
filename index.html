@@ -167,11 +167,11 @@
         <div class="modal-c-tabs">
   
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <!-- <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i></i>Login</a>
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i></i>Validar</a>
             </li>
-          </ul>
+          </ul> -->
 
           <div class="tab-content">
               <div class="modal-body mb-1">
@@ -191,8 +191,7 @@
               <!--Footer-->
               <div class="modal-footer">
                 <div class="options text-center text-md-right mt-1">
-                  <p><a data-dismiss="modal" data-toggle="modal" id="myBtn" href="#">Click</a></p>
-                  
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal" id="modalUsuarios">Registrarse</button>  
                 </div>
                 <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
               </div>
@@ -544,13 +543,11 @@
           $("#myBtn").click(function(){
             $("#myModal").modal();
           });
-        });
-    </script>
-    
-    <script>
-    $(document).ready(function(){
           $("#myBtn-Enviar").click(function(){
             $("#myModal-Enviar").modal();
+          });
+          $("#modalUsuarios").click(function(){
+            $("#myModal").modal();
           });
         });
     </script>
