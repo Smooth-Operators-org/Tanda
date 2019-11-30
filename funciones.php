@@ -5,10 +5,9 @@
         case 'insertarRegistro':
             insertarRegistro();
             break;
-        // case 'getRegistro':
-        // getRegistro($_POST["salones"]);
-        // break;
-
+        case 'getRegistro':
+        getRegistro();
+        break;
         default:
             # code...
             break;
@@ -24,7 +23,6 @@
         $UserEmail=json_decode($UserEmail);
         $UserPhone=json_decode($UserPhone);
         $PlanId=json_decode($PlanId);
-
         $UserCreated= strftime("%y-%m-%d %H:%M:%S");
         // $UserSerial = Math.floor((Math.random() * 999999) + 1);
         $UserSerial = rand(111111, 999999);
@@ -35,10 +33,8 @@
         $UserEmail = $_POST['UserEmail'];
         $UserPhone = $_POST['UserPhone'];
         $PlanId = $_POST['PlanId'];
-
         if (empty($UserName) && empty($UserLastname) && empty($UserPassword) && empty($UserSerial) && empty($UserEmail) && empty($UserPhone) && empty($PlanId)) {
              $respuesta["status"] = 0;
-
         // if (empty($nombre) && empty($id_grados) && empty($tiene_canon) && empty($status)) {
         //     $respuesta["status"] = 0;
         }else{
@@ -77,4 +73,30 @@
     //     $respuesta["status"] = $obt_salon["status"];
     //     echo json_encode($respuesta);
     // }    
+
+function getRegistro(){ 
+      extract($_POST);
+      //   $UserEmail=json_decode($UserEmail);
+      //   $UserPassword=json_decode($UserPassword);
+        $UserPassword = $_POST['UserPassword'];
+        $UserEmail = $_POST['UserEmail'];
+
+      if (empty($UserEmail)){ 
+            $respuesta ["status"] = 0;  
+            echo"Erorr 401";  
+
+} else if(empty($UserPassword)){ 
+          $respuesta ["status"] = 0;
+} 
+else { 
+global $db;
+$obtenerUser = $db -> get("User", "*", ["UserEmail" => $UserEmail]);
+
+$respuesta ["UserEmail"] = $obtenerUser ["UserEmail"];
+$respuesta ["UserPassword"] = $obtenerUser ["UserPassword"];
+$respuesta ["status"] = 1;
+print_r($respuesta ["UserEmail"]);
+alert("OKOK");
+} echo json_encode($respuesta);
+}
 ?>

@@ -50,3 +50,38 @@ $(document).ready(function() {
     $("#myBtn").show();
   });
 });
+///Consulta Usuario
+$(document).ready(function() {
+  var obj = {};
+
+  $("#btnConsultar").click(function() {
+    obj = {
+      accion: "getRegistro"
+    };
+  $("#btnConsultar").click(function() {
+    obj["UserEmail"] = $("#UserEmail").val();
+    obj["UserPassword"] = $("#UserPassword").val();
+    console.log(obj);
+    switch (obj.accion) {
+      case "getRegistro":
+        $.post(
+          "funciones.php",
+          obj,
+          function(respuesta) {
+            if (respuesta.status == 0) {
+            } else if (respuesta.status == 1) {
+              location.reload();
+            } else {
+              errorAlert();
+            }
+          },
+          "JSON"
+        );
+        break;
+      default:
+        break;
+    }
+  });
+    });
+
+});

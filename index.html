@@ -157,61 +157,52 @@
                         <input type="text">
                         <a class="cta-btn align-middle" id="myBtn-Enviar">Enviar código</a>
                     </div>
-                     <!-- Modal -->
-                     <div class="modal fade" id="myModal-Enviar">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <form id="myForm">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                        <h1>Ingresa tu correo</h1>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    
-                                </div>
-                                <div class="modal-body" style="padding:40px 50px;">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo electrónico:">
-                                        </div>
-                                        <button type="button" id="btnValidar" class="btn btn-success btn-block">Validar</button>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña:">
-                                        </div>
-                                        <button type="button" id="btnValidar-pass" class="btn btn-success btn-block">Validar Cupón</button>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="UserName" placeholder="Nombre:">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido(s):">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="UserEmail" placeholder="Correo Electrónico:">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="UserPassword" placeholder="Contraseña:">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="UserPhone" placeholder="Teléfono:">
-                                        </div>
-                                        <div class="form-group">
-                                            <select id="PlanId" class="custom-select">
-                                                <option selected="">Selecciona un Plan</option>
-                                                <option value="0">Prueba</option>
-                                                <option value="1">Básico</option>
-                                                <option value="2">Premium</option>
-                                            </select>
-                                        </div>
-                
-                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
-                                        Cancel</button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div> 
-                    <!-- end of modal -->
+  <!--Modal: Login / Register Form-->
+<div class="modal fade" id="myModal-Enviar">
+    <div class="modal-dialog" role="document">
+      <!--Content-->
+      <div class="modal-content">
+  
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+  
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i></i>Login</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <input type="email" id="UserEmail" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Correo</label>
+                </div>
+  
+                <div class="md-form form-sm mb-4">
+                  <input type="password" id="UserPassword" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Contraseña</label>
+                </div>
+                <div class="text-center mt-2">
+                  <button type="button" id="btnConsultar" class="btn btn-success btn-block">Inciar Sesión<i ></i></button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p><a data-dismiss="modal" data-toggle="modal" id="myBtn" href="#">Click</a></p>
+                  
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+  
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <!--Modal: Login / Register Form-->
                 </div>
             </div>
         </section>
@@ -418,7 +409,7 @@
                     <h3 class="section-title">Contacto</h3>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 maps">
                 <!-- Uncomment below if you wan to use dynamic maps -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8759371020137!2d-86.84963468506518!3d21.157334985928852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID%20Campus%20Canc%C3%BAn!5e0!3m2!1ses!2smx!4v1572747227076!5m2!1ses!2smx"
                     width="50%" height="580" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -555,6 +546,7 @@
           });
         });
     </script>
+    
     <script>
     $(document).ready(function(){
           $("#myBtn-Enviar").click(function(){
