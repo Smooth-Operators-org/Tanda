@@ -74,29 +74,28 @@
     //     echo json_encode($respuesta);
     // }    
 
-function getRegistro(){ 
+function getRegistro(){
+    echo "holas"; 
       extract($_POST);
-      //   $UserEmail=json_decode($UserEmail);
-      //   $UserPassword=json_decode($UserPassword);
-        $UserPassword = $_POST['UserPassword'];
-        $UserEmail = $_POST['UserEmail'];
-
+        $UserEmail=json_decode($usuario);
+        $UserPassword=json_decode($password);
+        $UserEmail = $_POST['usuario']; 
+        $UserPassword = $_POST['password'];
       if (empty($UserEmail)){ 
             $respuesta ["status"] = 0;  
-            echo"Erorr 401";  
-
 } else if(empty($UserPassword)){ 
           $respuesta ["status"] = 0;
 } 
 else { 
 global $db;
-$obtenerUser = $db -> get("User", "*", ["UserEmail" => $UserEmail]);
+$obtenerUser = $db -> get("User", "*", ["UserEmail" => $UserEmail], ["UserPassword" => $UserPassword]);
 
-$respuesta ["UserEmail"] = $obtenerUser ["UserEmail"];
-$respuesta ["UserPassword"] = $obtenerUser ["UserPassword"];
-$respuesta ["status"] = 1;
-print_r($respuesta ["UserEmail"]);
-alert("OKOK");
+if ($empty($obtenerUser)) {
+    $respuesta ["status"] = 0;   
+}
+else {
+    $respuesta ["status"] = 1;   
+}
 } echo json_encode($respuesta);
 }
 ?>
