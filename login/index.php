@@ -4,14 +4,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="/css/estilo_login.css" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Login</title>
 </head>
 <body>
   <div class="login-page">
     <div class="form">
       <img src="/img/60765.svg" class="fondo" />
-      <img src="/img/login_ico.svg" class="ico" />
       <form class="register-form" id="register-form">
         <input type="text" id="matricula" name="matricula" placeholder="Matricula" />
         <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
