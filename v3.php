@@ -11,6 +11,6 @@ $message=$_POST["message"];
 
 $contenido="Nombre: ".$nombre."\nCorreo: ".$email."\nTelefono: ".$telefono."\nComentario: ".$message;
 mail($destino,"Contacto", $contenido);
-header("Location: index.html");
+header("Location: index.php");
 
 ?>
