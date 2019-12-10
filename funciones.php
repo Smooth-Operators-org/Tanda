@@ -45,7 +45,7 @@
             //     "status" => $status
             // ]);
             // $respuesta["status"] = 1;
-            $db->insert("User",[
+            $db-> insert("User",[
                  "UserName" => $UserName,
                  "UserLastname" => $UserLastname,
                  "UserPassword" => $UserPassword,
@@ -75,27 +75,30 @@
     // }    
 
 function getRegistro(){
-    echo "holas"; 
-      extract($_POST);
-        $UserEmail=json_decode($usuario);
-        $UserPassword=json_decode($password);
-        $UserEmail = $_POST['usuario']; 
-        $UserPassword = $_POST['password'];
+    // echo "holas"; 
+      extract($_POST);  
+        $UserEmail=json_decode($UserEmail);
+
+        // $UserPassword=json_decode($password);
+        $UserEmail = $_POST['UserEmail']; 
+        // $UserPassword = $_POST['password'];
       if (empty($UserEmail)){ 
             $respuesta ["status"] = 0;  
-} else if(empty($UserPassword)){ 
-          $respuesta ["status"] = 0;
-} 
-else { 
-global $db;
-$obtenerUser = $db -> get("User", "*", ["UserEmail" => $UserEmail], ["UserPassword" => $UserPassword]);
+      }
+// } else if(empty($UserPassword)){ 
+//           $respuesta ["status"] = 0;
+// } 
+    else { 
+    global $db;
+    $obtenerUser = $db -> get("User", "*", ["UserEmail" => $UserEmail]);
+    // ["UserPassword" => $UserPassword]
 
-if ($empty($obtenerUser)) {
-    $respuesta ["status"] = 0;   
-}
-else {
-    $respuesta ["status"] = 1;   
-}
-} echo json_encode($respuesta);
+    if (empty($obtenerUser)) {
+        $respuesta ["status"] = 0;   
+    }
+    else {
+        $respuesta ["status"] = 1;   
+    }
+    } echo json_encode($respuesta);
 }
 ?>

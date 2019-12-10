@@ -18,12 +18,12 @@ $(document).ready(function() {
     obj["UserPhone"] = $("#UserPhone").val();
     obj["PlanId"] = $("#PlanId").val();
 
-      // obj.push("UserName", UserName);
-      // obj.push("UserLastname", UserLastname);
-      // obj.push("UserPassword", UserPassword);
-      // obj.push("UserEmail", UserEmail);
-      // obj.push("UserPhone", UserPhone);
-      // obj.push("PlanId", PlanId);
+    // obj.push("UserName", UserName);
+    // obj.push("UserLastname", UserLastname);
+    // obj.push("UserPassword", UserPassword);
+    // obj.push("UserEmail", UserEmail);
+    // obj.push("UserPhone", UserPhone);
+    // obj.push("PlanId", PlanId);
 
     switch (obj.accion) {
       case "insertarRegistro":
@@ -32,6 +32,7 @@ $(document).ready(function() {
           obj,
           function(respuesta) {
             if (respuesta.status == 0) {
+              alert("Usuario Incorrecto");
             } else if (respuesta.status == 1) {
               location.reload();
             } else {
@@ -50,15 +51,15 @@ $(document).ready(function() {
     $("#myBtn").show();
   });
 
-///Consulta Usuario
+  ///Consulta Usuario
   var obj = {};
-  
+
   $("#myBtnenviar").click(function() {
     obj = {
       accion: "getRegistro"
     };
     $("#btnConsultar").text("Canjea tu Cupon");
-  });  
+  });
 
   $("#btnConsultar").click(function() {
     obj["UserEmail"] = $("#usuario").val();
@@ -81,9 +82,9 @@ $(document).ready(function() {
         break;
       default:
         break;
-      }
-    });
+    }
+  });
   $("#btn-cancel").click(function() {
     $("#myBtnenviar").show();
   });
-    });
+});
