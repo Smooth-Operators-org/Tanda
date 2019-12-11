@@ -20,7 +20,7 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
     
     $mail->Subject = 'Nueva solicitud de contacto Damda';
     
-    $mail->Body    = 'Nuevo mensaje de contacto de Damda por parte de: <strong>'
+    $mail->Body    = 'Nuevo mensaje de contacto de Damdapor parte de: <strong>'
     .$name.'  ('.$email.')</strong><br>El mensaje es el siguiente<br><br><strong>
     Nombre: '.$name.'<br>
     Correo: '.$email.'<br>
@@ -30,5 +30,7 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
     $mail->AltBody = $mensaje;
     
+    
+header("Location: index.php");
 
 ?>
