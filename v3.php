@@ -1,16 +1,11 @@
 <?php
-// require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-$destino="k.manzur13@gmail.com";
-$nombre=$_POST["name"];
-$email=$_POST["email"];
-$telefono=$_POST["phone"];
-// $where=$_POST["where"];
-// $ciudad=$_POST["ciudad"];
-// $estado=$_POST["estado"];
-$message=$_POST["message"];
-
-$contenido="Nombre: ".$nombre."\nCorreo: ".$email."\nTelefono: ".$telefono."\nComentario: ".$message;
-mail($destino,"Contacto", $contenido);
-header("Location: index.php");
+ $destino="k.manzur13@gmail.com";
+ $name=$_POST["name"];
+ $email=$_POST["email"];
+ $phone=$_POST["phone"];
+ $message=$_POST["message"];
+ $contenido="Nombre: ".$name."\nCorreo: ".$email."\nTelefono: ".$phone."\nComentario: ".$message;
+ mail($destino,"Contacto", $contenido);
+ header("Location: index.php");
 
 ?>

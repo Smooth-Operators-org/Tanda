@@ -551,7 +551,7 @@
                                 <div class="validation"></div>
                             </div> -->
                             <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                <textarea class="form-control" name="message"  id="message" rows="5" data-rule="required"
                                     placeholder="Comentario:"></textarea>
                                 <div class="validation"></div>
                             </div>
@@ -593,6 +593,7 @@
     <script src="js/main.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="mainRegistro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <script>
         $(document).ready(function () {

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "catfan/medoo",
-            "version": "v1.7.6",
+            "version": "v1.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/catfan/Medoo.git",
-                "reference": "4b3194a526e7e0ace7efd3a6773f0805fd47bef9"
+                "reference": "d7aa617f8c4e2437b32f788f24adea01202032de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/catfan/Medoo/zipball/4b3194a526e7e0ace7efd3a6773f0805fd47bef9",
-                "reference": "4b3194a526e7e0ace7efd3a6773f0805fd47bef9",
+                "url": "https://api.github.com/repos/catfan/Medoo/zipball/d7aa617f8c4e2437b32f788f24adea01202032de",
+                "reference": "d7aa617f8c4e2437b32f788f24adea01202032de",
                 "shasum": ""
             },
             "require": {
@@ -64,20 +64,20 @@
                 "sql",
                 "sqlite"
             ],
-            "time": "2019-10-26T06:27:51+00:00"
+            "time": "2019-12-09T16:48:57+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.2",
+            "version": "v6.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "0ae8505d26fa7fa15d3d2d5ec1e695e854bb1538"
+                "reference": "c5e61d0729507049cec9673aa1a679f9adefd683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/0ae8505d26fa7fa15d3d2d5ec1e695e854bb1538",
-                "reference": "0ae8505d26fa7fa15d3d2d5ec1e695e854bb1538",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c5e61d0729507049cec9673aa1a679f9adefd683",
+                "reference": "c5e61d0729507049cec9673aa1a679f9adefd683",
                 "shasum": ""
             },
             "require": {
@@ -86,13 +86,9 @@
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "doctrine/annotations": "1.2.*",
+                "doctrine/annotations": "^1.2",
                 "friendsofphp/php-cs-fixer": "^2.2",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "^4.8 || ^5.7",
-                "zendframework/zend-eventmanager": "3.0.*",
-                "zendframework/zend-i18n": "2.7.3",
-                "zendframework/zend-serializer": "2.7.*"
+                "phpunit/phpunit": "^4.8 || ^5.7"
             },
             "suggest": {
                 "ext-mbstring": "Needed to send email in multibyte encoding charset",
@@ -130,7 +126,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2019-11-13T20:09:28+00:00"
+            "time": "2019-12-10T11:17:38+00:00"
         }
     ],
     "packages-dev": [],

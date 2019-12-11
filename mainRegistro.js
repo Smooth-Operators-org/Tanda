@@ -32,7 +32,6 @@ $(document).ready(function() {
           obj,
           function(respuesta) {
             if (respuesta.status == 0) {
-              alert("Usuario Incorrecto");
             } else if (respuesta.status == 1) {
               location.reload();
             } else {
@@ -72,7 +71,10 @@ $(document).ready(function() {
           function(respuesta) {
             if (respuesta.status == 0) {
             } else if (respuesta.status == 1) {
-              alert("Correcto");
+              Swal.fire({
+                title: "Ingresa tu contraseña",
+                input: "text"
+              });
             } else {
               errorAlert();
             }
