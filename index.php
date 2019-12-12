@@ -173,7 +173,7 @@
                             <form id="myLogin">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1>Iniciar Sesión</h1>
+                                        <h1>Ingresa tu cupón</h1>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div class="modal-body" style="padding:40px 50px;">
@@ -185,7 +185,7 @@
                                             <input type="password" class="form-control" id="password"
                                             required="required" placeholder="Contraseña">
                                         </div> -->
-                                        <button type="button" id="btnConsultar" class="btn btn-primary btn-block">Log in</button>
+                                        <button type="button" id="btnConsultar" class="btn btn-primary btn-block"></button>
                                     </div>
                                     <div class="modal-footer">
                                         <!-- <button class="btn btn-warning btn-default pull-left"

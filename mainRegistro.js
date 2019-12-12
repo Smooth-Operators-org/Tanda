@@ -57,7 +57,7 @@ $(document).ready(function() {
     obj = {
       accion: "getRegistro"
     };
-    $("#btnConsultar").text("Canjea tu Cupon");
+    $("#btnConsultar").text("Canjea tu Cupón");
   });
 
   $("#btnConsultar").click(function() {
@@ -70,10 +70,19 @@ $(document).ready(function() {
           obj,
           function(respuesta) {
             if (respuesta.status == 0) {
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Usuario no registrado!",
+                footer:
+                  "<a data-dismiss='modal' data-toggle='modal' href='#myModal'>Registrate</a>",
+                timer: 3000
+              });
+              // swal.close();
             } else if (respuesta.status == 1) {
               Swal.fire({
                 title: "Ingresa tu contraseña",
-                input: "text"
+                input: "password"
               });
             } else {
               errorAlert();
