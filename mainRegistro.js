@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  var obj = {};
 
   $("#myBtn").click(function() {
 
@@ -9,6 +8,8 @@ $(document).ready(function() {
   });
 
   $("#btnRegistrar").click(function() {
+    var obj = {};
+
     obj = {
       accion: "insertarRegistro"
     };
