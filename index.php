@@ -1,4 +1,8 @@
 <?php
+require_once 'db.php';
+$consulta = "SELECT * FROM planes where id_app=2";
+$planes =mysqli_query($conectar, $consulta);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -236,45 +240,21 @@
                     <p class="section-description">Contamos con los siguientes planes.</p>
                 </div>
                 <div class="row">
+                <?php while ($pla=mysqli_fetch_array($planes)){?>
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="box">
                             <div class="icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
-                            <h4 class="title">Prueba</h4>
+                            <h4 class="title"><?php echo $pla['nombre_plan'] ?></h4>
                             <ul class="description text-left">
-                                <li>Acceso gratuito a todas las funciones de un usuario Premium.</li>
-                                <li>Durante 15 días.</li>
+                                <li align="justify"><?php echo $pla['desc_plan'] ?></li>
+                                
                             </ul>
+                            <div class="price" ><h5>$<?php echo$pla['costo_plan'] ?><span>/mo.</span></h5></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="box">
-                            <div class="icon"><i class="fas fa-coins"></i></div>
-                            <h4 class="title">Básico</h4>
-                            <ul class="description text-left">
-                                <li>Tandas de hasta 10 personas.</li>
-                                <li>Máximo $1,000 pesos por persona.</li>
-                                <li>Limitado a dos grupos de tandas.</li>
-                                <!-- <li>Tandas de hasta 4 meses.</li> -->
-                                <!-- 19 USD -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="box">
-                            <div class="icon"><i class="fas fa-dollar-sign"></i></div>
-                            <h4 class="title">Premium</h4>
-                            <ul class="description text-left">
-                                <li>Tandas sin límite de personas.</li>
-                                <li>No hay máxima cantidad para los abonos.</li>
-                                <li>Puedes tener los grupos de tandas que quieras.</li>
-                                <li>Tú eliges el tiempo de duración.</li>
-                                <!-- 49 USD  -->
-                            </ul>
-                        </div>
-                        <!-- <div class="cta-btn-container text-center">
-                            <a class="cta-btn align-middle" href="#">Registrarse</a>
-                        </div> -->
-                    </div>
+                <?php } ?>
+
+                    
                 </div>
                 <div class="row text-center">
                     <div class="cta-btn-container col-md-12 ">
