@@ -204,7 +204,7 @@ $planes =mysqli_query($conectar, $consulta);
             <div class="container wow fadeInUp">
             <div class="row">
 
-        <!-- Modal -->
+        <!-- Modal Contraseña -->
         <div class="modal fade" id="getmyModalPass">
                         <div class="modal-dialog"> 
                             <!-- Modal content-->

@@ -2,8 +2,6 @@ $(document).ready(function() {
 
   $("#myBtn").click(function() {
 
-    // $("#myBtn").hide();
-    // $("#myModal")[0].reset();
     $("#btnRegistrar").text("Unete");
   });
 
@@ -72,8 +70,6 @@ $(document).ready(function() {
           function(respuesta) {
             if (respuesta.status == 0) {
               // swal("Usuario no Registrado", "Presionar Registrar", "error");
-              
-              
               Swal.fire({
                 icon: "error",
                 title: "Error",
