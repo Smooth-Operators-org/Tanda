@@ -1,6 +1,7 @@
 <?php 
      // Using Medoo namespace
- require $_SERVER["DOCUMENT_ROOT"].'vendor/autoload.php';
+ require $_SERVER["DOCUMENT_ROOT"].'/vendor/autoload.php';
+ 
  use Medoo\Medoo;
   
  // Initialize

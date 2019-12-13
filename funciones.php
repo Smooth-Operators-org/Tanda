@@ -1,5 +1,7 @@
 <?php
- require_once $_SERVER["DOCUMENT_ROOT"].'database.php';
+ require_once $_SERVER["DOCUMENT_ROOT"].'/database.php';
+//  require_once $_SERVER["DOCUMENT_ROOT"].'database.php';
+ //Corroborar este apartado en MAC genera error
  if ($_POST) {
      switch ($_POST["accion"]) {
         case 'insertarRegistro':
@@ -8,6 +10,9 @@
         case 'getRegistro':
         getRegistro();
         break;
+        case 'getPass':
+            getPass();
+            break;
         default:
             # code...
             break;
@@ -101,4 +106,28 @@ function getRegistro(){
     }
     } echo json_encode($respuesta);
 }
+ 
+////// ****FUNCION GETPASSWORD **** ////// 
+function getPass(){
+    global $db;
+          extract($_POST);  
+        //   $UserEmail=json_decode($UserEmail);
+        //   $UserEmail = $_POST['UserEmail']; 
+            $UserPassword=json_decode($UserPassword);
+            $UserPassword = $_POST['UserPassword']; 
+            global $db;
+        if($UserPassword != ''){ 
+            // && $UserPass != ''
+            // 'UserEmail'=>$UserEmail,
+        $obtenerPass = $db -> get("User", "*", ["UserPassword" => $UserPassword]);
+
+        if ($obtenerPass) {
+            $respuesta ["status"] = 1;   
+        }
+        else {
+            $respuesta ["status"] = 0;   
+        }
+    }
+         echo json_encode($respuesta);
+    }
 ?>

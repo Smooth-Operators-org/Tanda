@@ -173,7 +173,7 @@
                             <form id="myLogin">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1>Ingresa tu cupón</h1>
+                                        <h1>Ingresa tu Usuario</h1>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div class="modal-body" style="padding:40px 50px;">
@@ -181,17 +181,9 @@
                                             <input type="email" class="form-control" id="usuario"
                                             required="required" placeholder="Usuario">
                                         </div>
-                                        <!-- <div class="form-group">
-                                            <input type="password" class="form-control" id="password"
-                                            required="required" placeholder="Contraseña">
-                                        </div> -->
                                         <button type="button" id="btnConsultar" class="btn btn-primary btn-block"></button>
                                     </div>
                                     <div class="modal-footer">
-                                        <!-- <button class="btn btn-warning btn-default pull-left"
-                                            data-dismiss="modal" id="modalUsuarios"><span
-                                                class="glyphicon glyphicon-remove"></span>Registrate</button> -->
-
                                         <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
                                                 class="glyphicon glyphicon-remove"></span>Cancelar</button>
                                     </div>
@@ -200,60 +192,42 @@
                         </div>
                     </div>
                     <!-- end of modal -->
-
-                    <!-- Modal: Login / Register Form
-                    <div class="modal fade" id="myModalEnviar">
-                        <div class="modal-dialog" role="document"> -->
-                    <!--Content-->
-                    <!-- <div class="modal-content"> -->
-                    <!--Modal cascading tabs-->
-                    <!-- <div class="modal-c-tabs"> -->
-                    <!-- Nav tabs -->
-                    <!-- <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i></i>Validar</a>
-            </li>
-          </ul> -->
-                    <!-- <div class="tab-content">
-                                        <div class="modal-body mb-1">
-                                            <div class="md-form form-sm mb-5">
-                                                <input type="email" id="UserEmail"
-                                                    class="form-control form-control-sm validate">
-                                                <label data-error="wrong" data-success="right"
-                                                    for="modalLRInput10">Correo</label>
-                                            </div>
-                                            <div class="md-form form-sm mb-4">
-                                                <input type="password" id="UserPassword"
-                                                    class="form-control form-control-sm validate">
-                                                <label data-error="wrong" data-success="right"
-                                                    for="modalLRInput11">Contraseña</label>
-                                            </div>
-                                            <div class="text-center mt-2">
-                                                <button type="button" id="btnConsultar"
-                                                    class="btn btn-success btn-block">Inciar Sesión<i></i></button>
-                                            </div>
-                                        </div> -->
-                    <!--Footer-->
-                    <!-- <div class="modal-footer">
-                                            <div class="options text-center text-md-right mt-1">
-                                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
-                                                    data-dismiss="modal" id="modalUsuarios">Registrarse</button>
-                                            </div>
-                                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
-                                                data-dismiss="modal">Close</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div> -->
-                    <!--Modal: Login / Register Form -->
                 </div>
             </div>
         </section>
         <!-- #promos -->
+        <section id="modalContraseña">
+            <div class="container wow fadeInUp">
+            <div class="row">
 
+        <!-- Modal -->
+        <div class="modal fade" id="getmyModalPass">
+                        <div class="modal-dialog"> 
+                            <!-- Modal content-->
+                            <form id="myLoginPass">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1>Ingresa tu contraseña</h1>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                        <div class="modal-body" style="padding:40px 50px;">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="password"
+                                            required="required" placeholder="Contraseña">
+                                        </div>
+                                        <button type="button" id="btnConsultarPass" class="btn btn-primary btn-block"></button>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+                                                class="glyphicon glyphicon-remove"></span>Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
+                    <!-- end of modal -->
+                    </div>
+            </div>
+        </section>
         <!--========================== Planes Section ============================-->
         <section id="planes">
             <div class="container wow fadeIn">
@@ -602,7 +576,10 @@
             });
             $("#myBtnenviar").click(function () {
                 $("#myModalenviar").modal();
+                // $("#myModalPass").modal();
             });
+        //     $("#getmyModalPass").modal('show');
+
         });
     </script>
 
